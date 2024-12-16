@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.navbar{
+    backdrop-filter: blur(10px);
+    /* background-color: rgba(255, 255, 255, 0.777); */
+    z-index: 10;
+}
+.banner-container {
+    background-image: url("./assets/banner.png");
+    background-size: cover;
+    /* background-position: center; */
+    height: 760px;
+}
+
+.feature-card {
+    box-shadow: 0px 3px 13px 0px rgba(128, 204, 186, 0.24);
+}
+
+.nominee-card {
+    box-shadow: 0px 3px 13px 0px rgba(128, 204, 186, 0.24);
+}
