@@ -5,7 +5,6 @@ import currency from "../../assets/currency.png";
 const Features = () => {
     return (
         <div className='mt-28 px-8 sm:px-16 lg:px-28'>
-            {/* Header Section */}
             <div>
                 <h1 className='font-semibold text-3xl sm:text-4xl md:text-5xl leading-[44px] sm:leading-[50px] md:leading-[60px]'>
                     Comprehensive <span className='text-[rgba(25,114,93,1)]'>Features</span> <br />
@@ -20,8 +19,6 @@ const Features = () => {
                     Add your first document
                 </a>
             </div>
-
-            {/* Feature Cards Section */}
             <div className='mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8'>
                 <div className='feature-card bg-background-color shadow-lg w-full h-[185px] rounded-[20px] flex gap-8 px-8 py-6 items-center'>
                     <div>
@@ -32,7 +29,7 @@ const Features = () => {
                         </p>
                     </div>
                     <div>
-                        <img src={currency} className='w-32 h-32' alt='currency' />
+                        <img src={currency} className='w-32 h-32 object-cover' alt='currency' />
                     </div>
                 </div>
                 <div className='feature-card bg-background-color shadow-lg w-full h-[185px] rounded-[20px] flex gap-8 px-8 py-6 items-center'>
@@ -44,7 +41,7 @@ const Features = () => {
                         </p>
                     </div>
                     <div>
-                        <img src={currency} className='w-32 h-32' alt='currency' />
+                        <img src={currency} className='w-32 h-32 object-cover' alt='currency' />
                     </div>
                 </div>
                 <div className='feature-card bg-background-color shadow-lg w-full h-[185px] rounded-[20px] flex gap-8 px-8 py-6 items-center'>
@@ -56,7 +53,7 @@ const Features = () => {
                         </p>
                     </div>
                     <div>
-                        <img src={currency} className='w-32 h-32' alt='currency' />
+                        <img src={currency} className='w-32 h-32 object-cover' alt='currency' />
                     </div>
                 </div>
             </div>

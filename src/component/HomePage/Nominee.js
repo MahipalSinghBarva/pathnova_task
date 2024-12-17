@@ -55,38 +55,23 @@ const Nominee = () => {
                 </div>
             </div>
 
-            <div className="px-6 sm:px-12 md:px-24 flex gap-12 flex-wrap justify-end lg:justify-end  max-[650px]:pl-24  ">
-                <div className="flex flex-col gap-6 w-full sm:w-[224px] lg:w-auto">
-                    <Icon
-                        icon="raphael:settingsalt"
-                        width="76"
-                        height="76"
-                        className="text-[rgba(32,117,109,0.25)]"
-                    />
-                    <h2 className="text-lg font-medium leading-5">Go to a feature</h2>
-                    <p className="text-secondry-gray text-lg leading-5 w-[224px]">Lorem ipsum dolor sit <br /> amet, consectetur adipiscing elit</p>
-                </div>
-                <div className="flex flex-col gap-6 w-full sm:w-[224px] lg:w-auto">
-                    <Icon
-                        icon="raphael:settingsalt"
-                        width="76"
-                        height="76"
-                        className="text-[rgba(32,117,109,0.25)]"
-                    />
-                    <h2 className="text-lg font-medium leading-5">Go to a feature</h2>
-                    <p className="text-secondry-gray text-lg leading-5 w-[224px]">Lorem ipsum dolor sit <br /> amet, consectetur adipiscing elit</p>
-                </div>
-                <div className="flex flex-col gap-6 w-full sm:w-[224px] lg:w-auto">
-                    <Icon
-                        icon="raphael:settingsalt"
-                        width="76"
-                        height="76"
-                        className="text-[rgba(32,117,109,0.25)]"
-                    />
-                    <h2 className="text-lg font-medium leading-5">Go to a feature</h2>
-                    <p className="text-secondry-gray text-lg leading-5 w-[224px]">Lorem ipsum dolor sit <br /> amet, consectetur adipiscing elit</p>
-                </div>
+            <div className="px-6 sm:px-12 md:px-24 pb-8 flex flex-wrap gap-12 max-[650px]:pl-28 lg:flex-1 justify-start lg:justify-end min-[1260px]:pl-96 ">
+                {Array(3).fill("").map((_, index) => (
+                    <div key={index} className="flex flex-col gap-6 w-full sm:w-[224px] md:flex-1 lg:w-auto">
+                        <Icon
+                            icon="raphael:settingsalt"
+                            width="76"
+                            height="76"
+                            className="text-[rgba(32,117,109,0.25)]"
+                        />
+                        <h2 className="text-lg font-medium leading-5">Go to a feature</h2>
+                        <p className="text-secondry-gray text-lg leading-5 w-[224px]">
+                            Lorem ipsum dolor sit <br /> amet, consectetur adipiscing elit
+                        </p>
+                    </div>
+                ))}
             </div>
+
         </div>
     );
 };
